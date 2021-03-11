@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="main-page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона: Каталог (by BYN)</title>
@@ -7,31 +7,34 @@
     <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicon/icon180.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
 
-  <body class="main-page">
-    <header> <!--Шапка-->
-      <nav> <!--Навигация по сайту-->
-      <ul> <!-- формат задать позже в CSS class="site-navigation"-->
+  <body>
+  <div class="conteiner">
+    <!-------------------------Header-------------------------->
+    <header class="main-header">
+      <nav class="main-navigation"> <!--Навигация по сайту-->
+      <ul class="site-navigation ul-no-bullets">
         <li><a href="blank.html">Информация</a></li>
         <li><a href="blank.html">Фото и видео</a></li>
         <li><a href="blank.html">Карта штата</a></li>
         <li><a href="blank.html">Гостиницы</a></li>
       </ul>
-      <a href="index.html">             
+      <a class="main-header-logo" href="index.html"href="index.html">
         <img src="img/city-of-sedona-logo.svg" width="170" height="70" alt="Логотип сайта">
       </a>
     </nav>
-
   </header>
+  <!-------------------------End of Header-------------------------->
 
     <main>
       <section> <!--Условия для выбора гостиницы-->
         <form action="https://echo.htmlacademy.ru/">
           <fieldset>
             <legend>инфраструктура:</legend>
-            <ul>
+            <ul class="ul-no-bullets">
               <li>
                 <input type="checkbox" name="pool" id="pool-id" checked>
                 <label for="pool-id">бассейн</label>
@@ -49,7 +52,7 @@
         
           <fieldset>
             <legend>тип жилья:</legend>
-            <ul>
+             <ul class="ul-no-bullets">
               <li>
                 <input type="checkbox" name="hotel" id="hotel-id" checked>
                 <label for="hotel-id">отель</label>
@@ -91,9 +94,9 @@
       </section>
 
       <section> <!--Статистика выбора и сортировка-->
-        <h2>найдено: 3</h2>
+        <h2 class="h2-type">найдено: 3</h2>
         <p>сортировка:</p>
-        <ul>
+        <ul class="ul-no-bullets">
           <li>
             <a href="blank.html">по цене</a>
           </li>
@@ -104,7 +107,7 @@
             <a href="blank.html">по рейтингу</a>
           </li>
         </ul>
-        <ul>
+        <ul class="ul-no-bullets">
           <li>
             <a href="blank.html">
               <img src="img/icon-up-dir.svg"
@@ -125,7 +128,7 @@
       </section>
 
       <section> <!--Результаты поиска-->
-        <ul> <!--Список карточек товара-->
+        <ul class="ul-no-bullets"> <!--Список карточек товара-->
           
           <li> <!--Карточка отеля Амара-->
             <div>
@@ -135,7 +138,7 @@
               alt="фото отеля амара">
             </div>
             <div>
-              <h2>Amara Resort & Spa</h2>
+              <h2 class="h2-type">Amara Resort & Spa</h2>
               <p>гостиница</p>
               <p>От 4000 Р.</p>
               <a href="blank.html">подробнее</a>
@@ -172,7 +175,7 @@
               alt="фото мотеля дезёрт">
             </div>
             <div>
-              <h2>Desert Quail Inn</h2>
+              <h2 class="h2-type">Desert Quail Inn</h2>
               <p>мотель</p>
               <p>От 3000 Р.</p>
               <a href="blank.html">подробнее</a>
@@ -205,7 +208,7 @@
               alt="фото апартаментов поко-диабло">
             </div>
             <div>
-              <h2>Villas at Poco Diablo</h2>
+              <h2 class="h2-type">Villas at Poco Diablo</h2>
               <p>апартаменты</p>
               <p>От 2000 Р.</p>
               <a href="blank.html">подробнее</a>
@@ -230,7 +233,7 @@
       </section>
     </main>
 
-    <footer class="footer"> <!--подвал-->
+    <footer class="main-footer"> <!--подвал-->
 
       <div> <!--Контакты-->
           <p >#VISITSEDONA</p>
@@ -238,7 +241,7 @@
       </div>
              
       <div> <!--Соц. сети-->
-        <ul> 
+        <ul class="ul-no-bullets"> 
           <li>
             <a href="https://twitter.com"> <!--добавить ссылку на страницу Седоны-->
               <!--<img src="img/footer-icon-rectangle.svg" alt="">-->
@@ -279,7 +282,7 @@
       </div>
 
     </footer>
+  </div>
+  </body>
 
-      </body>
-
-      </html>
+</html>
